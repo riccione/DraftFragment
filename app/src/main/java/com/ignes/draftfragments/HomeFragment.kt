@@ -3,7 +3,9 @@ package com.ignes.draftfragments
 
 import android.os.Bundle
 import android.view.*
+import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 /**
  * A main fragment
@@ -38,5 +40,17 @@ class HomeFragment : Fragment() {
             findNavController().navigate(action)
         }
         */
+
+        view.findViewById<Button>(R.id.easy_btn)?.setOnClickListener {
+            val mode = 1
+            val action = HomeFragmentDirections.actionHomeDestToPlayDest()
+            action.setMode(mode)
+            findNavController().navigate(action)
+        }
+
+        view.findViewById<Button>(R.id.stats_btn)?.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeDestToStatsDest()
+            findNavController().navigate(action)
+        }
     }
 }

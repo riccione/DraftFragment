@@ -96,6 +96,6 @@ class MainActivity : AppCompatActivity() {
         Otherwise, bubble up to the parent.
          */
         return item.onNavDestinationSelected(findNavController(R.id.nav_host_fragment))
-                || super.onOptionsItemSelected(item)
+            || super.onOptionsItemSelected(item)
     }
 }

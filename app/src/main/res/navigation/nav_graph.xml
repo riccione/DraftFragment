@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
             app:startDestination="@id/home_dest">
 
     <fragment
@@ -9,15 +10,38 @@
             android:name="com.ignes.draftfragments.HomeFragment"
             android:label="fragment_home"
             tools:layout="@layout/fragment_home">
+        <action
+                android:id="@+id/action_home_dest_to_play_dest"
+                app:destination="@id/play_dest" app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_right"
+                app:popExitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_home_dest_to_stats_dest"
+            app:destination="@id/stats_dest"/>
+        <action android:id="@+id/action_home_dest_to_resultsFragment" app:destination="@id/resultsFragment"
+                app:enterAnim="@anim/slide_in_right" app:popEnterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left" app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+            android:id="@+id/play_dest"
+            android:name="com.ignes.draftfragments.PlayFragment"
+            android:label="@string/play"
+            tools:layout="@layout/fragment_play">
+            <argument
+                    android:name="mode"
+                    app:argType="integer"
+                    android:defaultValue="1"/>
     </fragment>
     <fragment
             android:id="@+id/settings_dest"
             android:name="com.ignes.draftfragments.SettingsFragment"
-            android:label="fragment_settings"
+            android:label="@string/settings"
             tools:layout="@layout/fragment_settings"/>
     <fragment
-            android:id="@+id/statsFragment"
+            android:id="@+id/stats_dest"
             android:name="com.ignes.draftfragments.StatsFragment"
-            android:label="fragment_stats"
+            android:label="@string/stats"
             tools:layout="@layout/fragment_stats"/>
+    <fragment android:id="@+id/resultsFragment" android:name="com.ignes.draftfragments.ResultsFragment"
+              android:label="fragment_results" tools:layout="@layout/fragment_results"/>
 </navigation>
