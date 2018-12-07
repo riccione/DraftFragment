@@ -24,6 +24,23 @@
     </string>
     <string name="signin_other_error">There was an issue with sign in. Please try again later.</string>
 
+    <!-- Settings Menu Item [CHAR LIMIT=NONE] -->
+    <string name="settings_menu_item">Settings</string>
+    <!-- Settings Activity Title [CHAR LIMIT=NONE] -->
+    <string name="settings_title">Capitals quiz: Settings</string>
+
+    <!-- Strings For Number of questions Preference [CHAR LIMIT=30] -->
+    <string name="settings_number_of_questions">Number of questions</string>
+    <string name="settings_number_of_questions_by_key" translatable="false">number_of_questions</string>
+    <string name="settings_number_of_questions_default" translatable="false">@string/settings_10_questions_value</string>
+    <!-- Label for number of questions [CHAR LIMIT=20] -->
+    <string name="settings_10_questions" translatable="false">10</string>
+    <string name="settings_10_questions_value" translatable="false">10</string>
+    <string name="settings_20_questions" translatable="false">20</string>
+    <string name="settings_20_questions_value" translatable="false">20</string>
+    <string name="settings_30_questions" translatable="false">30</string>
+    <string name="settings_30_questions_value" translatable="false">30</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

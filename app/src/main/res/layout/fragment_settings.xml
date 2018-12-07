@@ -6,19 +6,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
+    <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:name="com.ignes.draftfragments.SettingsFragment$SettingsPreferenceFragment"
+            android:id="@+id/preference_fragment"
+            android:tag="@string/settings_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            tools:context="com.ignes.draftfragments.SettingsFragment"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_number_of_question">
+        <item>@string/settings_10_questions</item>
+        <item>@string/settings_20_questions</item>
+        <item>@string/settings_30_questions</item>
+    </string-array>
+
+    <string-array name="settings_order_by_values">
+        <item>@string/settings_10_questions_value</item>
+        <item>@string/settings_20_questions_value</item>
+        <item>@string/settings_30_questions_value</item>
+    </string-array>
+</resources>
