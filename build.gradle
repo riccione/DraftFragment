@@ -4,8 +4,9 @@ buildscript {
     //ext.kotlin_version = '1.3.11'
     ext {
         // App dependencies
-        nav_version = '1.0.0-alpha08'
         kotlin_version = '1.3.11'
+        nav_version = '1.0.0-alpha08'
+        room_version = "2.1.0-alpha03"
     }
     repositories {
         google()
